@@ -1,0 +1,21 @@
+.hr {
+  border: 1px solid #dedede;
+}
+.border-gray {
+  border: 1px solid #dedede;
+}
+
+.border-rounded {
+  border-radius: 1.5em;
+}
+.border-rounded2 {
+  border-radius: 0.5em;
+}
+
+.no-border {
+  border: none;
+}
+
+.no-outline {
+  outline: none;
+}

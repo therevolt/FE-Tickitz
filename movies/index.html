@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Detail - Page</title>
+    <link rel="stylesheet" href="./assets/css/Main.css" />
+  </head>
+  <body>
+    <header class="margin-x-3 padding-y-1 display-flex sm-margin-x-05 flex-direction-row">
+      <div class="display-flex is-vertically-centered flex-direction-row sm-flex-direction-col">
+        <div class="margin-right-3 hover-cursor-pointer flex-direction-row sm-flex-direction-col">
+          <img src="./assets/images/Tickitz 2.png" alt="main-logo" />
+        </div>
+        <div class="margin-right-2 font-size-5 hover-cursor-pointer sm-display-none">Movies</div>
+        <div class="margin-right-2 font-size-5 hover-cursor-pointer sm-display-none">Cinemas</div>
+        <div class="margin-right-2 font-size-5 hover-cursor-pointer sm-display-none">
+          Buy Ticket
+        </div>
+      </div>
+      <div class="display-flex is-vertically-centered flex-content-end flex-direction-row">
+        <select
+          class="select font-size-5 hover-cursor-pointer sm-display-none"
+          name="location"
+          id="loc"
+        >
+          <option value="#">Location</option>
+          <option value="Jakarta">Jakarta</option>
+          <option value="Bogor">Bogor</option>
+          <option value="Bandung">Bandung</option>
+          <option value="Yogyakarta">Yogyakarta</option>
+        </select>
+        <div class="margin-right-2 font-size-5 hover-cursor-pointer sm-display-none">
+          <img src="assets/images/bx_bx-search.png" height="20px" width="20px" alt="search" />
+        </div>
+        <div
+          class="margin-right-2 font-size-5 hover-cursor-pointer sm-margin-right-0 sm-display-none"
+        >
+          <img src="assets/images/Ellipse 11.png" height="56px" width="56px" alt="search" />
+        </div>
+        <div
+          class="margin-right-2 font-size-5 hover-cursor-pointer sm-margin-right-0 lg-display-none"
+          onclick="myFunction()"
+        >
+          <img src="assets/images/gg_menu-right-alt.png" height="24px" width="24px" alt="search" />
+        </div>
+      </div>
+    </header>
+    <div id="menu" class="menu-mobile">
+      <div class="display-flex is-vertically-centered border-gray border-rounded2 margin-y-1">
+        <img
+          class="margin-left-1"
+          src="assets/images/bx_bx-search.png"
+          height="20px"
+          width="20px"
+          alt="search"
+        />
+        <input class="input-form no-border" type="text" placeholder="Search . . ." />
+      </div>
+      <hr class="hr" />
+      <select class="select font-size-6" name="location" id="loc">
+        <option value="#">Location</option>
+        <option value="Jakarta">Jakarta</option>
+        <option value="Bogor">Bogor</option>
+        <option value="Bandung">Bandung</option>
+        <option value="Yogyakarta">Yogyakarta</option>
+      </select>
+      <hr class="hr" />
+      <a class="text-decoration-none margin-y-1 text-bold" href="">Movies</a>
+      <hr class="hr" />
+      <a class="text-decoration-none margin-y-1 text-bold" href="">Cinemas</a>
+      <hr class="hr" />
+      <a class="text-decoration-none margin-y-1 text-bold" href="">Buy Tiket</a>
+    </div>
+
+    <div
+      class="display-flex margin-x-3 margin-y-5 sm-margin-x-05 flex-direction-row sm-flex-direction-col"
+    >
+      <div class="display-flex-30 padding-x-2 sm-margin-bottom-1">
+        <div
+          class="w-100 h-100 border-gray border-rounded display-flex flex-direction-col flex-content-center is-vertically-centered padding-1"
+        >
+          <img src="./assets/images/Rectangle 119.png" alt="movie" />
+        </div>
+      </div>
+      <div class="display-flex-70 flex-direction-col margin-bottom-2">
+        <div class="margin-bottom-3 sm-text-center">
+          <h4 class="font-size-4 margin-bottom-05 text-title">Spider-Man: Homecoming</h4>
+          <span>Adventure, Action, Sci-Fi</span>
+        </div>
+        <div class="display-flex">
+          <div class="display-flex-30 flex-direction-col sm-display-flex-50">
+            <div class="margin-bottom-2">
+              <h5 class="text-title font-size-5 margin-bottom-05">Release date</h5>
+              <span>June 28, 2017</span>
+            </div>
+            <div class="margin-bottom-1">
+              <h5 class="text-title font-size-5 margin-bottom-05">Duration</h5>
+              <span>2 hours 13 minutes </span>
+            </div>
+          </div>
+          <div class="display-flex-70 flex-direction-col sm-display-flex-50">
+            <div class="margin-bottom-2">
+              <h5 class="text-title font-size-5 margin-bottom-05">Directed by</h5>
+              <span>Jon Watss</span>
+            </div>
+            <div class="margin-bottom-1">
+              <h5 class="text-title font-size-5 margin-bottom-05">Casts</h5>
+              <span>Tom Holland, Michael Keaton, Robert Downey Jr., ...</span>
+            </div>
+          </div>
+        </div>
+        <hr class="hr w-100 margin-y-2" />
+        <div>
+          <h5 class="text-title font-size-5 margin-bottom-05">Synopsis</h5>
+          <p class="synopsys">
+            Thrilled by his experience with the Avengers, Peter returns home, where he lives with
+            his Aunt May, under the watchful eye of his new mentor Tony Stark, Peter tries to fall
+            back into his normal daily routine - distracted by thoughts of proving himself to be
+            more than just your friendly neighborhood Spider-Man - but when the Vulture emerges as a
+            new villain, everything that Peter holds most important will be threatened.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="display-flex padding-x-3 is-vertically-centered flex-content-center flex-direction-col margin-bottom-5"
+    >
+      <h4 class="font-size-4 margin-bottom-2 text-title sm-text-center">Showtimes and Tickets</h4>
+      <div class="display-flex flex-direction-row sm-flex-direction-col">
+        <div class="display-flex margin-right-2 sm-margin-right-0 sm-margin-bottom-1">
+          <div
+            class="background-gray border-rounded display-flex flex-direction-row is-vertically-centered padding-x-2 padding-y-1"
+          >
+            <div class="margin-right-05">
+              <img src="./assets/images/calendar (1) 1.png" alt="calendar" />
+            </div>
+            <div class="margin-right-1">21/07/20</div>
+            <div>
+              <img src="./assets/images/ic_round-navigate-next.png" alt="calendar" />
+            </div>
+          </div>
+        </div>
+        <div class="display-flex margin-left-2 sm-margin-left-0">
+          <div
+            class="background-gray border-rounded display-flex flex-direction-row is-vertically-centered padding-x-2 padding-y-1"
+          >
+            <div class="margin-right-05">
+              <img src="./assets/images/Vector.png" alt="location" />
+            </div>
+            <div class="margin-right-1">Purwokerto</div>
+            <div>
+              <img src="./assets/images/ic_round-navigate-next.png" alt="calendar" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="grid margin-x-3 grid-template-columns-3 margin-bottom-05 sm-grid-template-columns-1 sm-margin-x-05"
+    >
+      <div class="border-rounded padding-y-1 margin-x-05 cinema sm-margin-bottom-1">
+        <div class="display-flex is-vertically-centered flex-direction-row sm-flex-direction-col">
+          <div
+            class="display-flex flex-direction-col is-vertically-centered flex-content-center sm-margin-bottom-1"
+          >
+            <img alt="ebv" src="./assets/images/ebv.id.png" width="106px" height="40px" />
+          </div>
+          <div class="display-flex flex-direction-col sm-text-center">
+            <h5 class="font-size-3 text-title margin-bottom-05 sm-display-none">ebv.id</h5>
+            <span>Whatever street No.12, <br />South Purwokerto</span>
+          </div>
+        </div>
+        <hr class="hr margin-y-2 margin-x-1" />
+        <div class="grid grid-template-columns-4 margin-x-1">
+          <div class="text-title margin-05">08:30am</div>
+          <div class="text-title margin-05">10:30am</div>
+          <div class="text-placeholder margin-05">12:00pm</div>
+          <div class="text-title margin-05">02:00pm</div>
+          <div class="text-placeholder margin-05">04:30pm</div>
+          <div class="text-title margin-05">07:00pm</div>
+          <div class="text-title margin-05">08:30pm</div>
+        </div>
+        <div class="display-flex flex-direction-row is-vertically-centered margin-y-1 margin-x-1">
+          <div class="display-flex flex-content-start font-size-5">Price</div>
+          <div class="display-flex flex-content-end font-size-5 text-title text-bold">
+            $10.00/seat
+          </div>
+        </div>
+        <div class="display-flex flex-direction-row is-vertically-centered margin-y-2 margin-x-1">
+          <div class="display-flex">
+            <button
+              class="background-primary text-white padding-1 border-rounded2 text-bold font-size-6 no-border hover-cursor-pointer no-outline"
+            >
+              Book Now
+            </button>
+          </div>
+          <div class="display-flex text-bold display-flex flex-content-end">
+            <button
+              class="text-primary background-white padding-1 border-rounded2 text-bold font-size-6 no-border hover-cursor-pointer no-outline"
+            >
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-rounded padding-y-1 margin-x-05 cinema sm-margin-bottom-1">
+        <div class="display-flex is-vertically-centered flex-direction-row sm-flex-direction-col">
+          <div class="display-flex flex-direction-col is-vertically-centered flex-content-center">
+            <img alt="ebv" src="./assets/images/CineOne21.png" width="106px" height="40px" />
+          </div>
+          <div class="display-flex flex-direction-col sm-text-center">
+            <h5 class="font-size-3 text-title margin-bottom-05 sm-display-none">CineOne21</h5>
+            <span
+              >Downcare street No. 21,<br />
+              East Purwokerto</span
+            >
+          </div>
+        </div>
+        <hr class="hr margin-y-2 margin-x-1" />
+        <div class="grid grid-template-columns-4 margin-x-1">
+          <div class="text-placeholder margin-05">08:30am</div>
+          <div class="text-title margin-05">10:00am</div>
+          <div class="text-title margin-05">12:00pm</div>
+          <div class="text-primary margin-05">02:00pm</div>
+          <div class="text-title margin-05">04:00pm</div>
+          <div class="text-placeholder margin-05">06:00pm</div>
+          <div class="text-placeholder margin-05">08:00pm</div>
+        </div>
+        <div class="display-flex flex-direction-row is-vertically-centered margin-y-1 margin-x-1">
+          <div class="display-flex flex-content-start font-size-5">Price</div>
+          <div class="display-flex flex-content-end font-size-5 text-title text-bold">
+            $10.00/seat
+          </div>
+        </div>
+        <div class="display-flex flex-direction-row is-vertically-centered margin-y-2 margin-x-1">
+          <div class="display-flex">
+            <button
+              class="background-primary text-white padding-1 border-rounded2 text-bold font-size-6 no-border hover-cursor-pointer no-outline"
+            >
+              Book Now
+            </button>
+          </div>
+          <div class="display-flex text-bold display-flex flex-content-end">
+            <button
+              class="text-primary background-white padding-1 border-rounded2 text-bold font-size-6 no-border hover-cursor-pointer no-outline"
+            >
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-rounded padding-y-1 margin-x-05 cinema sm-margin-bottom-1">
+        <div class="display-flex is-vertically-centered flex-direction-row sm-flex-direction-col">
+          <div class="display-flex flex-direction-col is-vertically-centered flex-content-center">
+            <img alt="ebv" src="./assets/images/hiflix.png" width="106px" height="40px" />
+          </div>
+          <div class="display-flex flex-direction-col sm-text-center">
+            <h5 class="font-size-3 text-title margin-bottom-05 sm-display-none">hiflix Cinema</h5>
+            <span
+              >Colonel street No. 2, <br />
+              East Purwokerto</span
+            >
+          </div>
+        </div>
+        <hr class="hr margin-y-2 margin-x-1" />
+        <div class="grid grid-template-columns-4 margin-x-1">
+          <div class="text-title margin-05">08:30am</div>
+          <div class="text-title margin-05">10:00am</div>
+          <div class="text-title margin-05">12:00pm</div>
+          <div class="text-placeholder margin-05">02:00pm</div>
+          <div class="text-title margin-05">04:00pm</div>
+          <div class="text-placeholder margin-05">06:00pm</div>
+          <div class="text-title margin-05">08:00pm</div>
+        </div>
+        <div class="display-flex flex-direction-row is-vertically-centered margin-y-1 margin-x-1">
+          <div class="display-flex flex-content-start font-size-5">Price</div>
+          <div class="display-flex flex-content-end font-size-5 text-title text-bold">
+            $10.00/seat
+          </div>
+        </div>
+        <div class="display-flex flex-direction-row is-vertically-centered margin-y-2 margin-x-1">
+          <div class="display-flex">
+            <button
+              class="background-primary text-white padding-1 border-rounded2 text-bold font-size-6 no-border hover-cursor-pointer no-outline"
+            >
+              Book Now
+            </button>
+          </div>
+          <div class="display-flex text-bold display-flex flex-content-end">
+            <button
+              class="text-primary background-white padding-1 border-rounded2 text-bold font-size-6 no-border hover-cursor-pointer no-outline"
+            >
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-rounded padding-y-1 margin-x-05 cinema sm-margin-bottom-1">
+        <div class="display-flex is-vertically-centered flex-direction-row sm-flex-direction-col">
+          <div
+            class="display-flex flex-direction-col is-vertically-centered flex-content-center sm-margin-bottom-1"
+          >
+            <img alt="ebv" src="./assets/images/ebv.id.png" width="106px" height="40px" />
+          </div>
+          <div class="display-flex flex-direction-col sm-text-center">
+            <h5 class="font-size-3 text-title margin-bottom-05 sm-display-none">ebv.id</h5>
+            <span>Whatever street No.12, <br />South Purwokerto</span>
+          </div>
+        </div>
+        <hr class="hr margin-y-2 margin-x-1" />
+        <div class="grid grid-template-columns-4 margin-x-1">
+          <div class="text-title margin-05">08:30am</div>
+          <div class="text-title margin-05">10:30am</div>
+          <div class="text-placeholder margin-05">12:00pm</div>
+          <div class="text-title margin-05">02:00pm</div>
+          <div class="text-placeholder margin-05">04:30pm</div>
+          <div class="text-title margin-05">07:00pm</div>
+          <div class="text-title margin-05">08:30pm</div>
+        </div>
+        <div class="display-flex flex-direction-row is-vertically-centered margin-y-1 margin-x-1">
+          <div class="display-flex flex-content-start font-size-5">Price</div>
+          <div class="display-flex flex-content-end font-size-5 text-title text-bold">
+            $10.00/seat
+          </div>
+        </div>
+        <div class="display-flex flex-direction-row is-vertically-centered margin-y-2 margin-x-1">
+          <div class="display-flex">
+            <button
+              class="background-primary text-white padding-1 border-rounded2 text-bold font-size-6 no-border hover-cursor-pointer no-outline"
+            >
+              Book Now
+            </button>
+          </div>
+          <div class="display-flex text-bold display-flex flex-content-end">
+            <button
+              class="text-primary background-white padding-1 border-rounded2 text-bold font-size-6 no-border hover-cursor-pointer no-outline"
+            >
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-rounded padding-y-1 margin-x-05 cinema sm-margin-bottom-1">
+        <div class="display-flex is-vertically-centered flex-direction-row sm-flex-direction-col">
+          <div class="display-flex flex-direction-col is-vertically-centered flex-content-center">
+            <img alt="ebv" src="./assets/images/CineOne21.png" width="106px" height="40px" />
+          </div>
+          <div class="display-flex flex-direction-col sm-text-center">
+            <h5 class="font-size-3 text-title margin-bottom-05 sm-display-none">CineOne21</h5>
+            <span
+              >Downcare street No. 21,<br />
+              East Purwokerto</span
+            >
+          </div>
+        </div>
+        <hr class="hr margin-y-2 margin-x-1" />
+        <div class="grid grid-template-columns-4 margin-x-1">
+          <div class="text-placeholder margin-05">08:30am</div>
+          <div class="text-title margin-05">10:00am</div>
+          <div class="text-title margin-05">12:00pm</div>
+          <div class="text-primary margin-05">02:00pm</div>
+          <div class="text-title margin-05">04:00pm</div>
+          <div class="text-placeholder margin-05">06:00pm</div>
+          <div class="text-placeholder margin-05">08:00pm</div>
+        </div>
+        <div class="display-flex flex-direction-row is-vertically-centered margin-y-1 margin-x-1">
+          <div class="display-flex flex-content-start font-size-5">Price</div>
+          <div class="display-flex flex-content-end font-size-5 text-title text-bold">
+            $10.00/seat
+          </div>
+        </div>
+        <div class="display-flex flex-direction-row is-vertically-centered margin-y-2 margin-x-1">
+          <div class="display-flex">
+            <button
+              class="background-primary text-white padding-1 border-rounded2 text-bold font-size-6 no-border hover-cursor-pointer no-outline"
+            >
+              Book Now
+            </button>
+          </div>
+          <div class="display-flex text-bold display-flex flex-content-end">
+            <button
+              class="text-primary background-white padding-1 border-rounded2 text-bold font-size-6 no-border hover-cursor-pointer no-outline"
+            >
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-rounded padding-y-1 margin-x-05 cinema sm-margin-bottom-1">
+        <div class="display-flex is-vertically-centered flex-direction-row sm-flex-direction-col">
+          <div class="display-flex flex-direction-col is-vertically-centered flex-content-center">
+            <img alt="ebv" src="./assets/images/hiflix.png" width="106px" height="40px" />
+          </div>
+          <div class="display-flex flex-direction-col sm-text-center">
+            <h5 class="font-size-3 text-title margin-bottom-05 sm-display-none">hiflix Cinema</h5>
+            <span
+              >Colonel street No. 2, <br />
+              East Purwokerto</span
+            >
+          </div>
+        </div>
+        <hr class="hr margin-y-2 margin-x-1" />
+        <div class="grid grid-template-columns-4 margin-x-1">
+          <div class="text-title margin-05">08:30am</div>
+          <div class="text-title margin-05">10:00am</div>
+          <div class="text-title margin-05">12:00pm</div>
+          <div class="text-placeholder margin-05">02:00pm</div>
+          <div class="text-title margin-05">04:00pm</div>
+          <div class="text-placeholder margin-05">06:00pm</div>
+          <div class="text-title margin-05">08:00pm</div>
+        </div>
+        <div class="display-flex flex-direction-row is-vertically-centered margin-y-1 margin-x-1">
+          <div class="display-flex flex-content-start font-size-5">Price</div>
+          <div class="display-flex flex-content-end font-size-5 text-title text-bold">
+            $10.00/seat
+          </div>
+        </div>
+        <div class="display-flex flex-direction-row is-vertically-centered margin-y-2 margin-x-1">
+          <div class="display-flex">
+            <button
+              class="background-primary text-white padding-1 border-rounded2 text-bold font-size-6 no-border hover-cursor-pointer no-outline"
+            >
+              Book Now
+            </button>
+          </div>
+          <div class="display-flex text-bold display-flex flex-content-end">
+            <button
+              class="text-primary background-white padding-1 border-rounded2 text-bold font-size-6 no-border hover-cursor-pointer no-outline"
+            >
+              Add To Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-divider margin-y-3 margin-x-3 sm-margin-x-05">
+      <span class="margin-x-1 text-primary text-bold">view more</span>
+    </div>
+
+    <div
+      class="display-flex flex-direction-row margin-x-3 margin-top-5 margin-bottom-5 sm-margin-x-05 sm-flex-direction-col"
+    >
+      <div class="display-flex flex-direction-col">
+        <img src="./assets/images/Tickitz 2.png" alt="big-logo" width="180px" height="72px" />
+        <p class="text-placeholder font-size-6 synopsys">
+          Stop waiting in line. Buy tickets <br />
+          conveniently, watch movies quietly.
+        </p>
+      </div>
+      <div class="display-flex flex-direction-col">
+        <div class="display-flex flex-direction-row sm-flex-direction-row sm-flex-direction-col">
+          <div class="display-flex flex-direction-col sm-margin-bottom-1">
+            <h6 class="font-size-5 margin-bottom-1">Explore</h6>
+            <div class="grid grid-template-columns-1 sm-grid-template-columns-3">
+              <div class="margin-bottom-05">Cinemas</div>
+              <div class="margin-bottom-05">Movies List</div>
+              <div class="margin-bottom-05">My Ticket</div>
+              <div class="margin-bottom-05">Notification</div>
+            </div>
+          </div>
+          <div class="display-flex flex-direction-col sm-margin-bottom-1">
+            <h6 class="font-size-5 margin-bottom-1">Our Sponsor</h6>
+            <div class="grid grid-template-columns-1 sm-grid-template-columns-3">
+              <div>
+                <img src="./assets/images/ebv.id.png" height="50px" width="auto" alt="ebv" />
+              </div>
+              <div>
+                <img src="./assets/images/CineOne21.png" height="50px" width="auto" alt="cineone" />
+              </div>
+              <div>
+                <img src="./assets/images/hiflix.png" height="50px" width="auto" alt="hiflix" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="display-flex flex-direction-col">
+        <h6 class="font-size-5 margin-bottom-1">Follow Us</h6>
+        <div class="display-flex flex-direction-col sm-flex-direction-row">
+          <div class="display-flex flex-direction-row margin-bottom-05">
+            <div class="margin-right-05 sm-margin-right-0">
+              <img src="./assets/images/eva_facebook-outline.png" alt="fb" />
+            </div>
+            <div class="sm-display-none">Tickitz Cinema id</div>
+          </div>
+          <div class="display-flex flex-direction-row margin-bottom-05">
+            <div class="margin-right-05 sm-margin-right-0">
+              <img src="./assets/images/bx_bxl-instagram.png" alt="ig" />
+            </div>
+            <div class="sm-display-none">tickitz.id</div>
+          </div>
+          <div class="display-flex flex-direction-row margin-bottom-05">
+            <div class="margin-right-05 sm-margin-right-0">
+              <img src="./assets/images/eva_twitter-outline.png" alt="twitter" />
+            </div>
+            <div class="sm-display-none">tickitz.id</div>
+          </div>
+          <div class="display-flex flex-direction-row margin-bottom-05">
+            <div class="margin-right-05 sm-margin-right-0">
+              <img src="./assets/images/feather_youtube.png" alt="yt" />
+            </div>
+            <div class="sm-display-none">Tickitz Cinema id</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="margin-bottom-5 display-flex flex-content-center is-vertically-centered">
+      © 2020 Tickitz. All Rights Reserved.
+    </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("menu");
+        if (x.className === "menu-mobile") {
+          x.className += " responsive";
+        } else {
+          x.className = "menu-mobile";
+        }
+      }
+    </script>
+  </body>
+</html>
