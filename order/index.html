@@ -48,7 +48,9 @@
       </div>
     </header>
     <div id="menu" class="menu-mobile">
-      <div class="display-flex is-vertically-centered border-gray border-rounded2 margin-y-1">
+      <div
+        class="warped-menu display-flex is-vertically-centered border-gray border-rounded2 margin-y-1"
+      >
         <img
           class="margin-left-1"
           src="assets/images/bx_bx-search.png"
@@ -72,217 +74,233 @@
       <a class="text-decoration-none margin-y-1 text-bold" href="">Cinemas</a>
       <hr class="hr" />
       <a class="text-decoration-none margin-y-1 text-bold" href="">Buy Tiket</a>
+      <hr class="hr" />
+      <span class="footer-nav">© 2020 Tickitz. All Rights Reserved.</span>
     </div>
+    <div id="shadow-menu" class="none-shadow-menu" onclick="myFunction()"></div>
 
-    <div class="background-grey box-shadow sm-display-none">
-      <div class="display-flex margin-x-5 sm-flex-direction-col">
-        <div class="main-panel display-flex flex-direction-col margin-top-3">
-          <div><p class="font-size-4 text-title text-bold sm-display-none">Movie Selected</p></div>
-          <div class="background-white border-rounded2 w-95 sm-display-none">
+    <div class="absolute-container">
+      <div class="background-grey box-shadow sm-display-none">
+        <div class="display-flex margin-x-5 sm-flex-direction-col">
+          <div class="main-panel display-flex flex-direction-col margin-top-3">
+            <div>
+              <p class="font-size-4 text-title text-bold sm-display-none">Movie Selected</p>
+            </div>
+            <div class="background-white border-rounded2 w-95 sm-display-none">
+              <div
+                class="margin-x-2 display-flex flex-content-between is-vertically-centered flex-direction-row"
+              >
+                <div><p class="font-size-4 text-title text-bold">Spider-Man: Homecoming</p></div>
+                <div>
+                  <input
+                    class="btn-submit-grey text-bold font-size-6 hover-cursor-pointer"
+                    type="submit"
+                    value="Change movie"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="font-size-4 text-title text-bold margin-y-2">Choose Your Seat</div>
+            <div>
+              <img class="seat-img border-rounded2" src="./assets/images/seat.PNG" alt="" />
+            </div>
+            <div class="display-flex flex-content-between margin-y-2 w-95">
+              <input
+                class="btn-submit-transparent border-rounded2 text-bold hover-cursor-pointer"
+                type="submit"
+                value="Change your movie"
+              /><input
+                class="btn-submit-solid border-rounded2 text-bold hover-cursor-pointer"
+                type="submit"
+                value="Checkout now"
+              />
+            </div>
+          </div>
+          <div class="side-panel display-flex flex-direction-col margin-top-3 sm-display-none">
+            <div><p class="font-size-4 text-title text-bold w-40">Order Info</p></div>
             <div
-              class="margin-x-2 display-flex flex-content-between is-vertically-centered flex-direction-row"
+              class="detail-order display-flex flex-direction-col background-white border-rounded2"
             >
-              <div><p class="font-size-4 text-title text-bold">Spider-Man: Homecoming</p></div>
-              <div>
-                <input
-                  class="btn-submit-grey text-bold font-size-6 hover-cursor-pointer"
-                  type="submit"
-                  value="Change movie"
-                />
+              <img class="img-order" src="./assets/images/CineOne21.png" alt="" />
+              <p class="cinema-text">CineOne21 Cinema</p>
+              <div class="table-detail display-flex flex-direction-col margin-top-3">
+                <div class="display-flex flex-direction-row flex-content-between margin-x-2">
+                  <p>Movie selected</p>
+                  <p class="text-bold">Spider-Man: Homecoming</p>
+                </div>
+                <div class="display-flex flex-direction-row flex-content-between margin-x-2">
+                  <p>Tuesday, 07 July 2020</p>
+                  <p class="text-bold">02:00pm</p>
+                </div>
+                <div class="display-flex flex-direction-row flex-content-between margin-x-2">
+                  <p>One ticket price</p>
+                  <p class="text-bold">$10</p>
+                </div>
+                <div class="display-flex flex-direction-row flex-content-between margin-x-2">
+                  <p>Seat choosed</p>
+                  <p class="text-bold">C4, C5, C6</p>
+                </div>
+              </div>
+              <hr size="4" />
+              <div class="display-flex flex-direction-row flex-content-between margin-x-2">
+                <p class="text-bold font-size-5">Total Payment</p>
+                <p class="text-bold font-size-5 text-primary">$30</p>
               </div>
             </div>
           </div>
-          <div class="font-size-4 text-title text-bold margin-y-2">Choose Your Seat</div>
-          <div><img class="seat-img border-rounded2" src="./assets/images/seat.PNG" alt="" /></div>
-          <div class="display-flex flex-content-between margin-right-2 margin-y-2">
+        </div>
+      </div>
+
+      <div class="lg-display-none background-grey is-vertically-centered">
+        <div class="display-flex margin-x-1 flex-direction-col">
+          <div><p class="text-title text-bold">Choose Your Seat</p></div>
+          <div>
+            <img
+              class="img-seat-mobile border-rounded2"
+              src="./assets/images/seat_mobile.PNG"
+              alt=""
+            />
+          </div>
+        </div>
+        <div
+          class="display-flex flex-direction-col margin-x-1 background-white margin-top-1 is-vertically-centered border-rounded2"
+        >
+          <div
+            class="display-flex flex-content-between margin-x-2 border-gray border-rounded2 margin-top-2"
+          >
+            <select class="seat-item background-grey margin-x-1 margin-y-1" name="" id="">
+              <option value="a">A</option>
+              <option value="b">B</option>
+              <option value="c">C</option>
+            </select>
+            <select class="seat-item background-grey margin-x-1 margin-y-1" name="" id="">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div
+            class="display-flex flex-content-between margin-x-2 margin-y-1 border-gray border-rounded2"
+          >
+            <select class="seat-item background-grey margin-x-1 margin-y-1" name="" id="">
+              <option value="a">A</option>
+              <option value="b">B</option>
+              <option value="c">C</option>
+            </select>
+            <select class="seat-item background-grey margin-x-1 margin-y-1" name="" id="">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div class="display-flex flex-content-between margin-x-2 border-gray border-rounded2">
+            <select class="seat-item background-grey margin-x-1 margin-y-1" name="" id="">
+              <option value="a">A</option>
+              <option value="b">B</option>
+              <option value="c">C</option>
+            </select>
+            <select class="seat-item background-grey margin-x-1 margin-y-1" name="" id="">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+          <div>
             <input
-              class="btn-submit-transparent border-rounded2 text-bold hover-cursor-pointer"
+              class="btn-submit-transparent border-rounded2 w-100 text-bold"
               type="submit"
-              value="Change your movie"
-            /><input
-              class="btn-submit-solid border-rounded2 text-bold hover-cursor-pointer"
+              value="Add new seat"
+            />
+          </div>
+        </div>
+        <div class="btn-checkout display-flex is-vertically-centered margin-y-2">
+          <div>
+            <input
+              class="btn-submit-solid border-rounded2 font-size-6"
               type="submit"
               value="Checkout now"
             />
           </div>
         </div>
-        <div class="side-panel display-flex flex-direction-col margin-top-3 sm-display-none">
-          <div><p class="font-size-4 text-title text-bold w-40">Order Info</p></div>
-          <div
-            class="detail-order display-flex flex-direction-col background-white border-rounded2"
-          >
-            <img class="img-order" src="./assets/images/CineOne21.png" alt="" />
-            <p class="cinema-text">CineOne21 Cinema</p>
-            <div class="table-detail display-flex flex-direction-col margin-top-3">
-              <div class="display-flex flex-direction-row flex-content-between margin-x-2">
-                <p>Movie selected</p>
-                <p class="text-bold">Spider-Man: Homecoming</p>
-              </div>
-              <div class="display-flex flex-direction-row flex-content-between margin-x-2">
-                <p>Tuesday, 07 July 2020</p>
-                <p class="text-bold">02:00pm</p>
-              </div>
-              <div class="display-flex flex-direction-row flex-content-between margin-x-2">
-                <p>One ticket price</p>
-                <p class="text-bold">$10</p>
-              </div>
-              <div class="display-flex flex-direction-row flex-content-between margin-x-2">
-                <p>Seat choosed</p>
-                <p class="text-bold">C4, C5, C6</p>
-              </div>
-            </div>
-            <hr size="4" />
-            <div class="display-flex flex-direction-row flex-content-between margin-x-2">
-              <p class="text-bold font-size-5">Total Payment</p>
-              <p class="text-bold font-size-5 text-primary">$30</p>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
 
-    <div class="lg-display-none background-grey is-vertically-centered">
-      <div class="display-flex margin-x-1 flex-direction-col">
-        <div><p class="text-title text-bold">Choose Your Seat</p></div>
-        <div>
-          <img
-            class="img-seat-mobile border-rounded2"
-            src="./assets/images/seat_mobile.PNG"
-            alt=""
-          />
-        </div>
-      </div>
       <div
-        class="display-flex flex-direction-col margin-x-1 background-white margin-top-1 is-vertically-centered border-rounded2"
+        class="display-flex flex-direction-row margin-x-3 margin-top-5 margin-bottom-5 sm-margin-x-05 sm-flex-direction-col"
       >
-        <div
-          class="display-flex flex-content-between margin-x-2 border-gray border-rounded2 margin-top-2"
-        >
-          <select class="seat-item background-grey margin-x-1 margin-y-1" name="" id="">
-            <option value="a">A</option>
-            <option value="b">B</option>
-            <option value="c">C</option>
-          </select>
-          <select class="seat-item background-grey margin-x-1 margin-y-1" name="" id="">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-          </select>
+        <div class="display-flex flex-direction-col margin-x-1">
+          <img src="./assets/images/Tickitz 2.png" alt="big-logo" width="180px" height="72px" />
+          <p class="text-placeholder font-size-6 synopsys">
+            Stop waiting in line. Buy tickets <br />
+            conveniently, watch movies quietly.
+          </p>
         </div>
-        <div
-          class="display-flex flex-content-between margin-x-2 margin-y-1 border-gray border-rounded2"
-        >
-          <select class="seat-item background-grey margin-x-1 margin-y-1" name="" id="">
-            <option value="a">A</option>
-            <option value="b">B</option>
-            <option value="c">C</option>
-          </select>
-          <select class="seat-item background-grey margin-x-1 margin-y-1" name="" id="">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-          </select>
+        <div class="display-flex flex-direction-col margin-x-1">
+          <div class="display-flex flex-direction-row sm-flex-direction-row sm-flex-direction-col">
+            <div class="display-flex flex-direction-col sm-margin-bottom-1">
+              <h6 class="font-size-5 margin-bottom-1">Explore</h6>
+              <div class="grid grid-template-columns-1 sm-grid-template-columns-3">
+                <div class="margin-bottom-05">Cinemas</div>
+                <div class="margin-bottom-05">Movies List</div>
+                <div class="margin-bottom-05">My Ticket</div>
+                <div class="margin-bottom-05">Notification</div>
+              </div>
+            </div>
+            <div class="display-flex flex-direction-col sm-margin-bottom-1">
+              <h6 class="font-size-5 margin-bottom-1">Our Sponsor</h6>
+              <div class="sponsor-icon grid grid-template-columns-1 sm-grid-template-columns-3">
+                <div>
+                  <img src="./assets/images/ebv.id.png" height="50px" width="auto" alt="ebv" />
+                </div>
+                <div>
+                  <img
+                    src="./assets/images/CineOne21.png"
+                    height="50px"
+                    width="auto"
+                    alt="cineone"
+                  />
+                </div>
+                <div>
+                  <img src="./assets/images/hiflix.png" height="50px" width="auto" alt="hiflix" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="display-flex flex-content-between margin-x-2 border-gray border-rounded2">
-          <select class="seat-item background-grey margin-x-1 margin-y-1" name="" id="">
-            <option value="a">A</option>
-            <option value="b">B</option>
-            <option value="c">C</option>
-          </select>
-          <select class="seat-item background-grey margin-x-1 margin-y-1" name="" id="">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-          </select>
-        </div>
-        <div>
-          <input
-            class="btn-submit-transparent border-rounded2 w-100 text-bold"
-            type="submit"
-            value="Add new seat"
-          />
+        <div class="display-flex flex-direction-col margin-x-1">
+          <h6 class="font-size-5 margin-bottom-1">Follow Us</h6>
+          <div class="display-flex flex-direction-col sm-flex-direction-row">
+            <div class="display-flex flex-direction-row margin-bottom-05">
+              <div class="margin-right-05 sm-margin-right-0">
+                <img src="./assets/images/eva_facebook-outline.png" alt="fb" />
+              </div>
+              <div class="sm-display-none">Tickitz Cinema id</div>
+            </div>
+            <div class="display-flex flex-direction-row margin-bottom-05">
+              <div class="margin-right-05 sm-margin-right-0">
+                <img src="./assets/images/bx_bxl-instagram.png" alt="ig" />
+              </div>
+              <div class="sm-display-none">tickitz.id</div>
+            </div>
+            <div class="display-flex flex-direction-row margin-bottom-05">
+              <div class="margin-right-05 sm-margin-right-0">
+                <img src="./assets/images/eva_twitter-outline.png" alt="twitter" />
+              </div>
+              <div class="sm-display-none">tickitz.id</div>
+            </div>
+            <div class="display-flex flex-direction-row margin-bottom-05">
+              <div class="margin-right-05 sm-margin-right-0">
+                <img src="./assets/images/feather_youtube.png" alt="yt" />
+              </div>
+              <div class="sm-display-none">Tickitz Cinema id</div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="btn-checkout display-flex is-vertically-centered margin-y-2">
-        <input
-          class="btn-submit-solid border-rounded2 font-size-6"
-          type="submit"
-          value="Checkout now"
-        />
-      </div>
-    </div>
 
-    <div
-      class="display-flex flex-direction-row margin-x-3 margin-top-5 margin-bottom-5 sm-margin-x-05 sm-flex-direction-col"
-    >
-      <div class="display-flex flex-direction-col margin-x-1">
-        <img src="./assets/images/Tickitz 2.png" alt="big-logo" width="180px" height="72px" />
-        <p class="text-placeholder font-size-6 synopsys">
-          Stop waiting in line. Buy tickets <br />
-          conveniently, watch movies quietly.
-        </p>
-      </div>
-      <div class="display-flex flex-direction-col margin-x-1">
-        <div class="display-flex flex-direction-row sm-flex-direction-row sm-flex-direction-col">
-          <div class="display-flex flex-direction-col sm-margin-bottom-1">
-            <h6 class="font-size-5 margin-bottom-1">Explore</h6>
-            <div class="grid grid-template-columns-1 sm-grid-template-columns-3">
-              <div class="margin-bottom-05">Cinemas</div>
-              <div class="margin-bottom-05">Movies List</div>
-              <div class="margin-bottom-05">My Ticket</div>
-              <div class="margin-bottom-05">Notification</div>
-            </div>
-          </div>
-          <div class="display-flex flex-direction-col sm-margin-bottom-1">
-            <h6 class="font-size-5 margin-bottom-1">Our Sponsor</h6>
-            <div class="grid grid-template-columns-1 sm-grid-template-columns-3">
-              <div>
-                <img src="./assets/images/ebv.id.png" height="50px" width="auto" alt="ebv" />
-              </div>
-              <div>
-                <img src="./assets/images/CineOne21.png" height="50px" width="auto" alt="cineone" />
-              </div>
-              <div>
-                <img src="./assets/images/hiflix.png" height="50px" width="auto" alt="hiflix" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="display-flex flex-direction-col margin-x-1">
-        <h6 class="font-size-5 margin-bottom-1">Follow Us</h6>
-        <div class="display-flex flex-direction-col sm-flex-direction-row">
-          <div class="display-flex flex-direction-row margin-bottom-05">
-            <div class="margin-right-05 sm-margin-right-0">
-              <img src="./assets/images/eva_facebook-outline.png" alt="fb" />
-            </div>
-            <div class="sm-display-none">Tickitz Cinema id</div>
-          </div>
-          <div class="display-flex flex-direction-row margin-bottom-05">
-            <div class="margin-right-05 sm-margin-right-0">
-              <img src="./assets/images/bx_bxl-instagram.png" alt="ig" />
-            </div>
-            <div class="sm-display-none">tickitz.id</div>
-          </div>
-          <div class="display-flex flex-direction-row margin-bottom-05">
-            <div class="margin-right-05 sm-margin-right-0">
-              <img src="./assets/images/eva_twitter-outline.png" alt="twitter" />
-            </div>
-            <div class="sm-display-none">tickitz.id</div>
-          </div>
-          <div class="display-flex flex-direction-row margin-bottom-05">
-            <div class="margin-right-05 sm-margin-right-0">
-              <img src="./assets/images/feather_youtube.png" alt="yt" />
-            </div>
-            <div class="sm-display-none">Tickitz Cinema id</div>
-          </div>
-        </div>
-      </div>
+      <footer class="margin-bottom-3 display-flex flex-content-center is-vertically-centered">
+        © 2020 Tickitz. All Rights Reserved.
+      </footer>
     </div>
-
-    <footer class="margin-bottom-3 display-flex flex-content-center is-vertically-centered">
-      © 2020 Tickitz. All Rights Reserved.
-    </footer>
 
     <script>
       function myFunction() {
@@ -291,6 +309,12 @@
           x.className += " responsive";
         } else {
           x.className = "menu-mobile";
+        }
+        var y = document.getElementById("shadow-menu");
+        if (y.className === "none-shadow-menu") {
+          y.className = "shadow-menu";
+        } else {
+          y.className = "none-shadow-menu";
         }
       }
     </script>

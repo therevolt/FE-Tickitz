@@ -48,7 +48,9 @@
       </div>
     </header>
     <div id="menu" class="menu-mobile">
-      <div class="display-flex is-vertically-centered border-gray border-rounded2 margin-y-1">
+      <div
+        class="warped-menu display-flex is-vertically-centered border-gray border-rounded2 margin-y-1"
+      >
         <img
           class="margin-left-1"
           src="assets/images/bx_bx-search.png"
@@ -72,281 +74,293 @@
       <a class="text-decoration-none margin-y-1 text-bold" href="">Cinemas</a>
       <hr class="hr" />
       <a class="text-decoration-none margin-y-1 text-bold" href="">Buy Tiket</a>
+      <hr class="hr" />
+      <span class="footer-nav">© 2020 Tickitz. All Rights Reserved.</span>
     </div>
+    <div id="shadow-menu" class="none-shadow-menu" onclick="myFunction()"></div>
 
-    <div class="background-grey box-shadow">
-      <div class="display-flex margin-x-5 sm-flex-direction-col sm-margin-x-0 padding-bottom-3">
-        <div class="main-panel display-flex flex-direction-col margin-top-3 sm-margin-top-0">
-          <div>
-            <p class="font-size-4 text-title text-bold sm-display-none margin-x-05">Payment Info</p>
-          </div>
-          <div
-            class="background-white border-rounded2 w-95 margin-x-1 sm-margin-x-0 sm-w-100 sm-border-none sm-shadow-bottom"
-          >
-            <div class="margin-y-2 sm-margin-y-05">
-              <div
-                class="margin-x-2 display-flex flex-content-between is-vertically-centered flex-direction-row sm-display-none"
-              >
-                <div><p class="text-placeholder">Date & time</p></div>
-                <div>
-                  <p class="text-bold">Tuesday, 07 July 2020 at 02:00pm</p>
-                </div>
-              </div>
-
-              <div
-                class="margin-x-2 display-flex flex-content-between is-vertically-centered flex-direction-row sm-display-none"
-              >
-                <div class="hr w-100"></div>
-              </div>
-
-              <div
-                class="margin-x-2 display-flex flex-content-between is-vertically-centered flex-direction-row sm-display-none"
-              >
-                <div><p class="text-placeholder">Movie title</p></div>
-                <div>
-                  <p class="text-bold">Spider-Man: Homecoming</p>
-                </div>
-              </div>
-
-              <div
-                class="margin-x-2 display-flex flex-content-between is-vertically-centered flex-direction-row sm-display-none"
-              >
-                <div class="hr w-100"></div>
-              </div>
-
-              <div
-                class="margin-x-2 display-flex flex-content-between is-vertically-centered flex-direction-row sm-display-none"
-              >
-                <div><p class="text-placeholder">Cinema name</p></div>
-                <div>
-                  <p class="text-bold">CineOne21 Cinema</p>
-                </div>
-              </div>
-
-              <div
-                class="margin-x-2 display-flex flex-content-between is-vertically-centered flex-direction-row sm-display-none"
-              >
-                <div class="hr w-100"></div>
-              </div>
-
-              <div
-                class="margin-x-2 display-flex flex-content-between is-vertically-centered flex-direction-row sm-display-none"
-              >
-                <div><p class="text-placeholder">Number of tickets</p></div>
-                <div>
-                  <p class="text-bold">3 pieces</p>
-                </div>
-              </div>
-
-              <div
-                class="margin-x-2 display-flex flex-content-between is-vertically-centered flex-direction-row sm-display-none"
-              >
-                <div class="hr w-100"></div>
-              </div>
-
-              <div
-                class="margin-x-2 display-flex flex-content-between is-vertically-centered flex-direction-row"
-              >
-                <div><p class="text-placeholder">Total payment</p></div>
-                <div>
-                  <p class="text-bold font-size-5">$30,00</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="font-size-4 text-title text-bold margin-y-2 margin-x-05">
-            Choose a Payment Method
-          </div>
-          <div class="background-white border-rounded2 w-95 margin-x-1 sm-margin-x-05">
-            <div
-              class="margin-y-2 display-flex flex-direction-col flex-content-center is-vertically-centered"
-            >
-              <div class="grid grid-template-columns-4 sm-grid-template-columns-3">
-                <img
-                  class="icon-payment border-gray border-rounded2 padding-x-2 padding-y-1 margin-y-1 sm-padding-x-05"
-                  src="./assets/images/google-pay.png"
-                  alt=""
-                />
-                <img
-                  class="icon-payment border-gray border-rounded2 padding-x-2 padding-y-1 margin-y-1 sm-padding-x-05"
-                  src="./assets/images/visa.png"
-                  alt=""
-                />
-                <img
-                  class="icon-payment border-gray border-rounded2 padding-x-2 padding-y-1 margin-y-1 sm-padding-x-05"
-                  src="./assets/images/gopay.png"
-                  alt=""
-                />
-                <img
-                  class="icon-payment border-gray border-rounded2 padding-x-2 padding-y-1 margin-y-1 sm-padding-x-05"
-                  src="./assets/images/paypal.png"
-                  alt=""
-                />
-                <img
-                  class="icon-payment border-gray border-rounded2 padding-x-2 padding-y-1 margin-y-1 sm-padding-x-05"
-                  src="./assets/images/dana.png"
-                  alt=""
-                />
-                <img
-                  class="icon-payment border-gray border-rounded2 padding-x-2 padding-y-1 margin-y-1 sm-display-none"
-                  src="./assets/images/bca.png"
-                  alt=""
-                />
-                <img
-                  class="icon-payment border-gray border-rounded2 padding-x-2 padding-y-1 margin-y-1 sm-display-none"
-                  src="./assets/images/bri.png"
-                  alt=""
-                />
-                <img
-                  class="icon-payment border-gray border-rounded2 padding-x-2 padding-y-1 margin-y-1 sm-padding-x-05"
-                  src="./assets/images/ovo.png"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div class="line margin-x-2"><div class="text-divider">Or</div></div>
+    <div class="absolute-container">
+      <div class="background-grey box-shadow">
+        <div class="display-flex margin-x-5 sm-flex-direction-col sm-margin-x-0 padding-bottom-3">
+          <div class="main-panel display-flex flex-direction-col margin-top-3 sm-margin-top-0">
             <div>
-              <p class="text-placeholder text-align padding-y-3">
-                Pay via cash. <span class="text-primary text-bold">See how it work</span>
+              <p class="font-size-4 text-title text-bold sm-display-none margin-x-05">
+                Payment Info
               </p>
             </div>
+            <div
+              class="background-white border-rounded2 w-95 margin-x-1 sm-margin-x-0 sm-w-100 sm-border-none sm-shadow-bottom"
+            >
+              <div class="margin-y-2 sm-margin-y-05">
+                <div
+                  class="margin-x-2 display-flex flex-content-between is-vertically-centered flex-direction-row sm-display-none"
+                >
+                  <div><p class="text-placeholder">Date & time</p></div>
+                  <div>
+                    <p class="text-bold">Tuesday, 07 July 2020 at 02:00pm</p>
+                  </div>
+                </div>
+
+                <div
+                  class="margin-x-2 display-flex flex-content-between is-vertically-centered flex-direction-row sm-display-none"
+                >
+                  <div class="hr w-100"></div>
+                </div>
+
+                <div
+                  class="margin-x-2 display-flex flex-content-between is-vertically-centered flex-direction-row sm-display-none"
+                >
+                  <div><p class="text-placeholder">Movie title</p></div>
+                  <div>
+                    <p class="text-bold">Spider-Man: Homecoming</p>
+                  </div>
+                </div>
+
+                <div
+                  class="margin-x-2 display-flex flex-content-between is-vertically-centered flex-direction-row sm-display-none"
+                >
+                  <div class="hr w-100"></div>
+                </div>
+
+                <div
+                  class="margin-x-2 display-flex flex-content-between is-vertically-centered flex-direction-row sm-display-none"
+                >
+                  <div><p class="text-placeholder">Cinema name</p></div>
+                  <div>
+                    <p class="text-bold">CineOne21 Cinema</p>
+                  </div>
+                </div>
+
+                <div
+                  class="margin-x-2 display-flex flex-content-between is-vertically-centered flex-direction-row sm-display-none"
+                >
+                  <div class="hr w-100"></div>
+                </div>
+
+                <div
+                  class="margin-x-2 display-flex flex-content-between is-vertically-centered flex-direction-row sm-display-none"
+                >
+                  <div><p class="text-placeholder">Number of tickets</p></div>
+                  <div>
+                    <p class="text-bold">3 pieces</p>
+                  </div>
+                </div>
+
+                <div
+                  class="margin-x-2 display-flex flex-content-between is-vertically-centered flex-direction-row sm-display-none"
+                >
+                  <div class="hr w-100"></div>
+                </div>
+
+                <div
+                  class="margin-x-2 display-flex flex-content-between is-vertically-centered flex-direction-row"
+                >
+                  <div><p class="text-placeholder">Total payment</p></div>
+                  <div>
+                    <p class="text-bold font-size-5">$30,00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="font-size-4 text-title text-bold margin-y-2 margin-x-05">
+              Choose a Payment Method
+            </div>
+            <div class="background-white border-rounded2 w-95 margin-x-1 sm-margin-x-05">
+              <div
+                class="margin-y-2 display-flex flex-direction-col flex-content-center is-vertically-centered"
+              >
+                <div class="grid grid-template-columns-4 sm-grid-template-columns-3">
+                  <img
+                    class="icon-payment border-gray border-rounded2 padding-x-2 padding-y-1 margin-y-1 sm-padding-x-05"
+                    src="./assets/images/google-pay.png"
+                    alt=""
+                  />
+                  <img
+                    class="icon-payment border-gray border-rounded2 padding-x-2 padding-y-1 margin-y-1 sm-padding-x-05"
+                    src="./assets/images/visa.png"
+                    alt=""
+                  />
+                  <img
+                    class="icon-payment border-gray border-rounded2 padding-x-2 padding-y-1 margin-y-1 sm-padding-x-05"
+                    src="./assets/images/gopay.png"
+                    alt=""
+                  />
+                  <img
+                    class="icon-payment border-gray border-rounded2 padding-x-2 padding-y-1 margin-y-1 sm-padding-x-05"
+                    src="./assets/images/paypal.png"
+                    alt=""
+                  />
+                  <img
+                    class="icon-payment border-gray border-rounded2 padding-x-2 padding-y-1 margin-y-1 sm-padding-x-05"
+                    src="./assets/images/dana.png"
+                    alt=""
+                  />
+                  <img
+                    class="icon-payment border-gray border-rounded2 padding-x-2 padding-y-1 margin-y-1 sm-display-none"
+                    src="./assets/images/bca.png"
+                    alt=""
+                  />
+                  <img
+                    class="icon-payment border-gray border-rounded2 padding-x-2 padding-y-1 margin-y-1 sm-display-none"
+                    src="./assets/images/bri.png"
+                    alt=""
+                  />
+                  <img
+                    class="icon-payment border-gray border-rounded2 padding-x-2 padding-y-1 margin-y-1 sm-padding-x-05"
+                    src="./assets/images/ovo.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="line margin-x-2"><div class="text-divider">Or</div></div>
+              <div>
+                <p class="text-placeholder text-align padding-y-3">
+                  Pay via cash. <span class="text-primary text-bold">See how it work</span>
+                </p>
+              </div>
+            </div>
+            <div
+              class="display-flex flex-content-between margin-right-2 margin-y-2 margin-x-1 sm-display-none"
+            >
+              <input
+                class="btn-submit-transparent border-rounded2 text-bold"
+                type="submit"
+                value="Change your movie"
+              /><input
+                class="btn-submit-solid border-rounded2 text-bold margin-left-2"
+                type="submit"
+                value="Checkout now"
+              />
+            </div>
           </div>
           <div
-            class="display-flex flex-content-between margin-right-2 margin-y-2 margin-x-1 sm-display-none"
+            class="side-panel display-flex flex-direction-col margin-top-3 sm-margin-top-0 w-95 margin-x-1 sm-margin-x-05"
           >
+            <div><p class="font-size-4 text-title text-bold w-40">Personal Info</p></div>
+            <div
+              class="detail-order display-flex flex-direction-col background-white border-rounded2 w-30em sm-w-100"
+            >
+              <div class="table-detail display-flex flex-direction-col margin-top-1">
+                <div class="display-flex flex-direction-col flex-content-between margin-x-2">
+                  <p>Full Name</p>
+                  <input class="input-form" type="text" value="Jonas El Rodriguez" />
+                </div>
+                <div class="display-flex flex-direction-col flex-content-between margin-x-2">
+                  <p>Email</p>
+                  <input class="input-form" type="email" value="jonasrodri123@gmail.com" />
+                </div>
+                <div class="display-flex flex-direction-col flex-content-between margin-x-2">
+                  <p>Phone Number</p>
+                  <div class="display-flex border-gray border-rounded2 w-100 sm-w-94">
+                    <div class="padding-y-1 w-10 padding-x-1">
+                      <input
+                        class="w-100 h-100 no-border no-bg border-right"
+                        type="text"
+                        value="+62"
+                        disabled
+                      />
+                    </div>
+                    <input class="input-form no-border" type="tel" value="81445687121" />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="background-warning display-flex flex-direction-row margin-x-2 is-vertically-centered flex-content-start margin-y-2 sm-w-80"
+              >
+                <div class="margin-x-2 display-flex is-vertically-centered flex-content-start">
+                  <img src="./assets/images/clarity_warning-standard-solid.png" alt="" />
+                  <p class="margin-x-1">Fill your data correctly.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="margin-y-2 w-95 sm-w-94">
             <input
-              class="btn-submit-transparent border-rounded2 text-bold"
               type="submit"
-              value="Change your movie"
-            /><input
-              class="btn-submit-solid border-rounded2 text-bold margin-left-2"
-              type="submit"
-              value="Checkout now"
+              class="btn-submit-solid lg-display-none text-bold border-rounded2 margin-x-1"
+              value="Pay your order"
             />
           </div>
         </div>
-        <div
-          class="side-panel display-flex flex-direction-col margin-top-3 sm-margin-top-0 w-95 margin-x-1 sm-margin-x-05"
-        >
-          <div><p class="font-size-4 text-title text-bold w-40">Personal Info</p></div>
-          <div
-            class="detail-order display-flex flex-direction-col background-white border-rounded2 w-30em sm-w-100"
-          >
-            <div class="table-detail display-flex flex-direction-col margin-top-1">
-              <div class="display-flex flex-direction-col flex-content-between margin-x-2">
-                <p>Full Name</p>
-                <input class="input-form" type="text" value="Jonas El Rodriguez" />
+      </div>
+
+      <div
+        class="display-flex flex-direction-row margin-x-3 margin-top-5 margin-bottom-5 sm-margin-x-05 sm-flex-direction-col"
+      >
+        <div class="display-flex flex-direction-col margin-x-1 sm-margin-x-05">
+          <img src="./assets/images/Tickitz 2.png" alt="big-logo" width="180px" height="72px" />
+          <p class="text-placeholder font-size-6 synopsys">
+            Stop waiting in line. Buy tickets <br />
+            conveniently, watch movies quietly.
+          </p>
+        </div>
+        <div class="display-flex flex-direction-col margin-x-1">
+          <div class="display-flex flex-direction-row sm-flex-direction-row sm-flex-direction-col">
+            <div class="display-flex flex-direction-col sm-margin-bottom-1">
+              <h6 class="font-size-5 margin-bottom-1">Explore</h6>
+              <div class="grid grid-template-columns-1 sm-grid-template-columns-3">
+                <div class="margin-bottom-05">Cinemas</div>
+                <div class="margin-bottom-05">Movies List</div>
+                <div class="margin-bottom-05">My Ticket</div>
+                <div class="margin-bottom-05">Notification</div>
               </div>
-              <div class="display-flex flex-direction-col flex-content-between margin-x-2">
-                <p>Email</p>
-                <input class="input-form" type="email" value="jonasrodri123@gmail.com" />
-              </div>
-              <div class="display-flex flex-direction-col flex-content-between margin-x-2">
-                <p>Phone Number</p>
-                <div class="display-flex border-gray border-rounded2 w-100 sm-w-94">
-                  <div class="padding-y-1 w-10 padding-x-1">
-                    <input
-                      class="w-100 h-100 no-border no-bg border-right"
-                      type="text"
-                      value="+62"
-                      disabled
-                    />
-                  </div>
-                  <input class="input-form no-border" type="tel" value="81445687121" />
+            </div>
+            <div class="display-flex flex-direction-col sm-margin-bottom-1">
+              <h6 class="font-size-5 margin-bottom-1">Our Sponsor</h6>
+              <div class="icon-sponsor grid grid-template-columns-1 sm-grid-template-columns-3">
+                <div>
+                  <img src="./assets/images/ebv.id.png" height="50px" width="auto" alt="ebv" />
+                </div>
+                <div>
+                  <img
+                    src="./assets/images/CineOne21.png"
+                    height="50px"
+                    width="auto"
+                    alt="cineone"
+                  />
+                </div>
+                <div>
+                  <img src="./assets/images/hiflix.png" height="50px" width="auto" alt="hiflix" />
                 </div>
               </div>
             </div>
-            <div
-              class="background-warning display-flex flex-direction-row margin-x-2 is-vertically-centered flex-content-start margin-y-2 sm-w-80"
-            >
-              <div class="margin-x-2 display-flex is-vertically-centered flex-content-start">
-                <img src="./assets/images/clarity_warning-standard-solid.png" alt="" />
-                <p class="margin-x-1">Fill your data correctly.</p>
+          </div>
+        </div>
+        <div class="display-flex flex-direction-col margin-x-1">
+          <h6 class="font-size-5 margin-bottom-1">Follow Us</h6>
+          <div class="display-flex flex-direction-col sm-flex-direction-row">
+            <div class="display-flex flex-direction-row margin-bottom-05">
+              <div class="margin-right-05 sm-margin-right-0">
+                <img src="./assets/images/eva_facebook-outline.png" alt="fb" />
               </div>
+              <div class="sm-display-none">Tickitz Cinema id</div>
+            </div>
+            <div class="display-flex flex-direction-row margin-bottom-05">
+              <div class="margin-right-05 sm-margin-right-0">
+                <img src="./assets/images/bx_bxl-instagram.png" alt="ig" />
+              </div>
+              <div class="sm-display-none">tickitz.id</div>
+            </div>
+            <div class="display-flex flex-direction-row margin-bottom-05">
+              <div class="margin-right-05 sm-margin-right-0">
+                <img src="./assets/images/eva_twitter-outline.png" alt="twitter" />
+              </div>
+              <div class="sm-display-none">tickitz.id</div>
+            </div>
+            <div class="display-flex flex-direction-row margin-bottom-05">
+              <div class="margin-right-05 sm-margin-right-0">
+                <img src="./assets/images/feather_youtube.png" alt="yt" />
+              </div>
+              <div class="sm-display-none">Tickitz Cinema id</div>
             </div>
           </div>
         </div>
-        <div class="margin-y-2 w-95 sm-w-94">
-          <input
-            type="submit"
-            class="btn-submit-solid lg-display-none text-bold border-rounded2 margin-x-1"
-            value="Pay your order"
-          />
-        </div>
       </div>
-    </div>
 
-    <div
-      class="display-flex flex-direction-row margin-x-3 margin-top-5 margin-bottom-5 sm-margin-x-05 sm-flex-direction-col"
-    >
-      <div class="display-flex flex-direction-col margin-x-1 sm-margin-x-05">
-        <img src="./assets/images/Tickitz 2.png" alt="big-logo" width="180px" height="72px" />
-        <p class="text-placeholder font-size-6 synopsys">
-          Stop waiting in line. Buy tickets <br />
-          conveniently, watch movies quietly.
-        </p>
-      </div>
-      <div class="display-flex flex-direction-col margin-x-1">
-        <div class="display-flex flex-direction-row sm-flex-direction-row sm-flex-direction-col">
-          <div class="display-flex flex-direction-col sm-margin-bottom-1">
-            <h6 class="font-size-5 margin-bottom-1">Explore</h6>
-            <div class="grid grid-template-columns-1 sm-grid-template-columns-3">
-              <div class="margin-bottom-05">Cinemas</div>
-              <div class="margin-bottom-05">Movies List</div>
-              <div class="margin-bottom-05">My Ticket</div>
-              <div class="margin-bottom-05">Notification</div>
-            </div>
-          </div>
-          <div class="display-flex flex-direction-col sm-margin-bottom-1">
-            <h6 class="font-size-5 margin-bottom-1">Our Sponsor</h6>
-            <div class="icon-sponsor grid grid-template-columns-1 sm-grid-template-columns-3">
-              <div>
-                <img src="./assets/images/ebv.id.png" height="50px" width="auto" alt="ebv" />
-              </div>
-              <div>
-                <img src="./assets/images/CineOne21.png" height="50px" width="auto" alt="cineone" />
-              </div>
-              <div>
-                <img src="./assets/images/hiflix.png" height="50px" width="auto" alt="hiflix" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="display-flex flex-direction-col margin-x-1">
-        <h6 class="font-size-5 margin-bottom-1">Follow Us</h6>
-        <div class="display-flex flex-direction-col sm-flex-direction-row">
-          <div class="display-flex flex-direction-row margin-bottom-05">
-            <div class="margin-right-05 sm-margin-right-0">
-              <img src="./assets/images/eva_facebook-outline.png" alt="fb" />
-            </div>
-            <div class="sm-display-none">Tickitz Cinema id</div>
-          </div>
-          <div class="display-flex flex-direction-row margin-bottom-05">
-            <div class="margin-right-05 sm-margin-right-0">
-              <img src="./assets/images/bx_bxl-instagram.png" alt="ig" />
-            </div>
-            <div class="sm-display-none">tickitz.id</div>
-          </div>
-          <div class="display-flex flex-direction-row margin-bottom-05">
-            <div class="margin-right-05 sm-margin-right-0">
-              <img src="./assets/images/eva_twitter-outline.png" alt="twitter" />
-            </div>
-            <div class="sm-display-none">tickitz.id</div>
-          </div>
-          <div class="display-flex flex-direction-row margin-bottom-05">
-            <div class="margin-right-05 sm-margin-right-0">
-              <img src="./assets/images/feather_youtube.png" alt="yt" />
-            </div>
-            <div class="sm-display-none">Tickitz Cinema id</div>
-          </div>
-        </div>
-      </div>
+      <footer class="margin-bottom-3 display-flex flex-content-center is-vertically-centered">
+        © 2020 Tickitz. All Rights Reserved.
+      </footer>
     </div>
-
-    <footer class="margin-bottom-3 display-flex flex-content-center is-vertically-centered">
-      © 2020 Tickitz. All Rights Reserved.
-    </footer>
 
     <script>
       function myFunction() {
@@ -355,6 +369,12 @@
           x.className += " responsive";
         } else {
           x.className = "menu-mobile";
+        }
+        var y = document.getElementById("shadow-menu");
+        if (y.className === "none-shadow-menu") {
+          y.className = "shadow-menu";
+        } else {
+          y.className = "none-shadow-menu";
         }
       }
     </script>

@@ -123,6 +123,61 @@ hr {
 }
 
 @media only screen and (max-width: 768px) {
+  .absolute-container {
+    position: absolute;
+    margin-top: 10vh;
+    width: 100vw;
+  }
+
+  .sponsor-icon {
+    margin-left: -15px;
+  }
+
+  header {
+    width: 100vw;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    height: 40px;
+    margin-bottom: 100px;
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+  }
+
+  header > div:nth-child(2) {
+    margin-right: 10px;
+  }
+
+  header > div:nth-child(1) {
+    margin-left: 10px;
+  }
+
+  div#menu {
+    width: 100vw;
+    position: absolute;
+    background: white;
+    padding-right: 6px;
+    z-index: 2;
+    margin-top: 9.5vh;
+  }
+
+  .shadow-menu {
+    width: 100vw;
+    height: 100%;
+    background-color: #000000a6;
+    z-index: 1;
+    opacity: 30%;
+    position: fixed;
+  }
+
+  .warped-menu {
+    width: 90%;
+  }
+
+  .footer-nav {
+    margin: 30px 0px;
+  }
+
   .select {
     border: none;
     padding: 10px;
@@ -138,7 +193,7 @@ hr {
   }
 
   .icon-sponsor {
-    margin-left: -5px;
+    margin-left: -15px;
   }
   .sm-grid-template-columns-1 {
     grid-template-columns: repeat(1, 1fr);

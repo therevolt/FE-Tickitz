@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
 html,
 body {
   margin: 0px;
@@ -91,6 +92,8 @@ h1 {
 
 div.form > div:nth-child(4) {
   margin-top: 30px;
+  width: 100%;
+  text-align: center;
 }
 
 div.form > div:nth-child(4) > span {
@@ -161,6 +164,7 @@ input {
   border-radius: 4px;
   width: 400px;
   height: 50px;
+  outline: none;
 }
 
 .btn-submit {
@@ -201,6 +205,9 @@ input {
 }
 /* Use a media query to add a breakpoint at 768px: */
 @media screen and (max-width: 768px) {
+  h1 {
+    font-family: "Inter", sans-serif;
+  }
   main {
     display: block;
   }
@@ -231,7 +238,7 @@ input {
     margin-left: 20px;
   }
   input {
-    width: 375px;
+    width: 85vw;
   }
   .line {
     margin-top: 20px;
