@@ -298,7 +298,11 @@ hr {
   }
 
   .input-form {
-    width: 23.5em;
+    width: 75vw;
+  }
+
+  .tel {
+    width: 75vw !important;
   }
 
   .sm-border-none {
