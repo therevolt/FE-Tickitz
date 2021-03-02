@@ -27,9 +27,11 @@
     <link rel="stylesheet" href="./assets/css/Main.css" />
   </head>
   <body>
-    <header class="margin-x-3 padding-y-1 display-flex sm-margin-x-05 flex-direction-row">
+    <header class="margin-x-3 padding-y-1 display-flex sm-margin-x-05 flex-direction-row h-10">
       <div class="display-flex is-vertically-centered flex-direction-row sm-flex-direction-col">
-        <div class="margin-right-3 hover-cursor-pointer flex-direction-row sm-flex-direction-col">
+        <div
+          class="margin-right-3 hover-cursor-pointer flex-direction-row sm-flex-direction-col sm-margin-top-min17"
+        >
           <img src="./assets/images/Tickitz 2.png" alt="main-logo" />
         </div>
         <div class="margin-right-2 font-size-5 hover-cursor-pointer sm-display-none">Movies</div>
@@ -156,20 +158,28 @@
         <div class="display-flex flex-direction-row sm-flex-direction-col">
           <div class="display-flex margin-right-2 sm-margin-right-0 sm-margin-bottom-1">
             <div
-              class="background-gray border-rounded display-flex flex-direction-row is-vertically-centered padding-x-2 padding-y-1"
+              class="warp-date background-gray border-rounded display-flex flex-direction-row is-vertically-centered padding-x-2 padding-y-1 position-relative"
+              style="width: 200px"
             >
-              <div class="margin-right-05">
-                <img src="./assets/images/calendar (1) 1.png" alt="calendar" />
-              </div>
-              <input
-                type="text"
-                class="datepicker background-gray no-border no-outline"
-                id="date"
-                placeholder="21/07/20"
-                style="color: #4e4b66"
-              />
-              <div>
-                <img src="./assets/images/ic_round-navigate-next.png" alt="calendar" />
+              <div class="display-flex position-absolute">
+                <div class="margin-right-05">
+                  <img src="./assets/images/calendar (1) 1.png" alt="calendar" />
+                </div>
+                <div class="position-relative" style="width: 175px">
+                  <input
+                    type="text"
+                    class="position-absolute datepicker background-gray no-border no-outline right-auto z-index-2 hover-cursor-pointer"
+                    id="date"
+                    placeholder="21/07/20"
+                    style="background: transparent"
+                  />
+                  <img
+                    class="position-absolute z-index-1 right-auto hover-cursor-pointer"
+                    src="./assets/images/ic_round-navigate-next.png"
+                    alt="calendar"
+                    style="top: 7px"
+                  />
+                </div>
               </div>
             </div>
           </div>

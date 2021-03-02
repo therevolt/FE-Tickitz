@@ -7,6 +7,18 @@
   color: #4e4b66;
 }
 
+.right-auto {
+  right: 55px;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+.z-index-2 {
+  z-index: 2;
+}
+
 #date {
   width: 8vw;
 }
@@ -46,6 +58,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .warp-date {
+    height: 50px;
+  }
+
   #date {
     width: 28vw;
   }
