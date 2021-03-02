@@ -84,15 +84,15 @@ and Last running the code (index.html) with your browser
 
 ## 🔎 Preview Design <a name = "preview"></a>
 - <b>Sign In Page</b>
-![Preview](https://raw.githubusercontent.com/therevolt/slicing-web-tickitz/master/signin.PNG)
+![Preview](https://raw.githubusercontent.com/therevolt/FE-Tickitz/master/assets/img/signin.PNG)
 - <b>Home Page</b>
-![Preview](https://raw.githubusercontent.com/therevolt/slicing-web-tickitz/master/home.PNG)
+![Preview](https://raw.githubusercontent.com/therevolt/FE-Tickitz/master/assets/img/home.PNG)
 - <b>Movie Detail Page</b>
-![Preview](https://raw.githubusercontent.com/therevolt/slicing-web-tickitz/master/movies.PNG)
+![Preview](https://raw.githubusercontent.com/therevolt/FE-Tickitz/master/assets/img/movies.PNG)
 - <b>Order Page</b>
-![Preview](https://raw.githubusercontent.com/therevolt/slicing-web-tickitz/master/order.PNG)
+![Preview](https://raw.githubusercontent.com/therevolt/FE-Tickitz/master/assets/img/order.PNG)
 - <b>Payment Page</b>
-![Preview](https://raw.githubusercontent.com/therevolt/slicing-web-tickitz/master/payment.PNG)
+![Preview](https://raw.githubusercontent.com/therevolt/FE-Tickitz/master/assets/img/payment.PNG)
 
 ## 💻 Live Demo <a name = "live_demo"></a>
 
