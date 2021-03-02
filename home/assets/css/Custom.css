@@ -201,7 +201,7 @@
 }
 
 .bg-none {
-  background: none;
+  background: none !important;
 }
 
 .element-showing {
