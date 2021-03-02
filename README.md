@@ -33,7 +33,7 @@ By changing it a little you can use this source code as a display for your websi
 
 ## 🧐 About <a name = "about"></a>
 
-This source code is the slicing task of the Academy Bootcamp
+This source code is the slicing task of the Arkademy Bootcamp
 
 ## 💭 How it works <a name = "working"></a>
 
