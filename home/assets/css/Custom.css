@@ -200,6 +200,10 @@
   background-color: #f5f6f8;
 }
 
+.bg-none {
+  background: none;
+}
+
 .element-showing {
   margin-bottom: 104px !important;
 }
