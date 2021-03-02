@@ -112,6 +112,10 @@ hr {
   outline: none;
 }
 
+.bg-none {
+  background: none !important;
+}
+
 @media only screen and (max-width: 768px) {
   .absolute-container {
     position: absolute;

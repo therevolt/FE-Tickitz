@@ -57,6 +57,10 @@
   display: none;
 }
 
+.bg-none {
+  background: none !important;
+}
+
 @media only screen and (max-width: 768px) {
   .warp-date {
     height: 50px;
